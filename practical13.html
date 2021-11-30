@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-13</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <style>
+      .table-1 tr:nth-child(odd) {
+        background: #d6e4bc;
+      }
+      .table-2 tr:nth-child(odd) {
+        background-color: #c1dcb7;
+      }
+      .table-3 tr:nth-child(odd) {
+        background-color: #bad6c8;
+      }
+      .table-4 tr:nth-child(odd) {
+        background-color: #bcd3dc;
+      }
+      table,
+      tbody,
+      tr,
+      td,
+      th {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      tr {
+        padding: 8px 0;
+      }
+      .content {
+        width: 50vw;
+        margin: auto;
+      }
+      button {
+        background-color: #64548f !important;
+        width: 100%;
+        padding: 8px 0 !important;
+      }
+      .main-content {
+        color: #64548f;
+      }
+      .green {
+        color: green;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="bg-secondary">
+    <div class="bg-light p-3 mt-3 content">
+      <h1 class="text-center fs-3">SELECT YOUR PLAN</h1>
+      <div class="row">
+        <div class="col me-1">
+          <table class="table-1">
+            <tr>
+              <th class="fs-1 main-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-clipboard-data"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"
+                  />
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+                  />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+                  />
+                </svg>
+                Basic
+              </th>
+            </tr>
+            <tr>
+              <td class="green">Rs. 500/-</td>
+            </tr>
+            <tr>
+              <td>50 pages</td>
+            </tr>
+            <tr>
+              <td>3 users</td>
+            </tr>
+            <tr>
+              <td>10 Sites</td>
+            </tr>
+            <tr>
+              <td>50 MB</td>
+            </tr>
+            <tr>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+          </table>
+          <button class="btn text-light">Sign Up</button>
+        </div>
+        <div class="col me-1">
+          <table class="table-2">
+            <tr>
+              <th class="fs-1 main-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-clipboard-data"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"
+                  />
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+                  />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+                  />
+                </svg>
+                Plus
+              </th>
+            </tr>
+            <tr>
+              <td class="green">Rs. 1500/-</td>
+            </tr>
+            <tr>
+              <td>100 pages</td>
+            </tr>
+            <tr>
+              <td>5 users</td>
+            </tr>
+            <tr>
+              <td>20 Sites</td>
+            </tr>
+            <tr>
+              <td>100 MB</td>
+            </tr>
+            <tr>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+          </table>
+          <button class="btn text-light">Sign Up</button>
+        </div>
+        <div class="col me-1">
+          <table class="table-3">
+            <tr>
+              <th class="fs-1 main-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-clipboard-data"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"
+                  />
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+                  />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+                  />
+                </svg>
+                Deluxe
+              </th>
+            </tr>
+            <tr>
+              <td class="green">Rs. 2500/-</td>
+            </tr>
+            <tr>
+              <td>200 pages</td>
+            </tr>
+            <tr>
+              <td>20 users</td>
+            </tr>
+            <tr>
+              <td>50 Sites</td>
+            </tr>
+            <tr>
+              <td>250 MB</td>
+            </tr>
+            <tr>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="red">X</td>
+            </tr>
+          </table>
+          <button class="btn text-light">Sign Up</button>
+        </div>
+        <div class="col me-1">
+          <table class="table-4">
+            <tr>
+              <th class="fs-1 main-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-clipboard-data"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"
+                  />
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+                  />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+                  />
+                </svg>
+                Plus
+              </th>
+            </tr>
+            <tr>
+              <td class="green">Rs. 3500/-</td>
+            </tr>
+            <tr>
+              <td>350 pages</td>
+            </tr>
+            <tr>
+              <td>30 users</td>
+            </tr>
+            <tr>
+              <td>100 Sites</td>
+            </tr>
+            <tr>
+              <td>540 MB</td>
+            </tr>
+            <tr>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+            <tr>
+              <td class="green">&check;</td>
+            </tr>
+          </table>
+          <button class="btn text-light">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

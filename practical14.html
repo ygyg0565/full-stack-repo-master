@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body style="background-color: grey; color: white">
+    <div>
+      <h1 style="text-align: center">COUNTER</h1>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <button
+          id="sub"
+          onclick="process('sub')"
+          style="padding: 8px 16px; background-color: yellow; margin: 10px"
+        >
+          -
+        </button>
+        <span id="count" style="margin: 8px 16px; font-size: large">0</span>
+        <button
+          id="add"
+          onclick="process('add')"
+          style="padding: 8px 16px; background-color: yellow; margin: 10px"
+        >
+          +
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function process(e) {
+        let sum = +document.getElementById("count").innerHTML;
+        if (e === "add") {
+          sum = sum + 1;
+        } else if (e === "sub" && sum > 0) {
+          sum = sum - 1;
+        }
+        document.getElementById("count").innerHTML = sum;
+      }
+    </script>
+  </body>
+</html>

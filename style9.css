@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+#menu {
+  background-color: grey;
+  height: 70px;
+  text-align: center;
+}
+#menu ul {
+  display: inline-flex;
+  list-style: none;
+}
+#menu ul li {
+  display: inline-block;
+  line-height: 70px;
+  padding: 0px 20px;
+}
+#menu ul li:hover,
+:active {
+  background-color: black;
+  transition: 0.4s;
+}
+#menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+#banner {
+  margin-top: 10px;
+  background-image: url(./img/16-169446_office-background-images-hd.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner h1 {
+  color: whitesmoke;
+  display: block;
+  font-size: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.sec1 {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+.box {
+  display: inline-block;
+
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 32px;
+}
+#box1 {
+  background-image: url(./img/1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#box2 {
+  background-image: url(./img/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#box3 {
+  background-image: url(./img/2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#box4 {
+  background-image: url(./img/4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content {
+  margin-top: 20px;
+}
+#content ::after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+#box5 {
+  background-color: grey;
+  width: 48%;
+  height: 500px;
+  float: left;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+#box5 h2 {
+  margin-top: 15px;
+}
+#box5 p {
+  text-align: justify;
+  padding: 20px;
+  font-size: x-large;
+  margin-top: 15px;
+}
+.box6 {
+  background-color: red;
+  width: 48%;
+  height: 150px;
+  float: right;
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+#project1 {
+  background-image: url(./img/project1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project2 {
+  background-image: url(./img/project2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project3 {
+  background-image: url(./img/project3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box9 {
+  width: 350px;
+  height: 400px;
+  border: 2px solid black;
+  margin-left: 20px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: justify;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+.box9 img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+}
+.box9 h2 {
+  text-align: center;
+  margin: 10px;
+}
+.mybutton {
+  margin: 10px;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 10px;
+  display: block;
+  padding: 20px;
+}
+.mybutton:hover {
+  background-color: black;
+}
+#html img {
+  height: 201px;
+}
+#html4 img {
+  height: 201px;
+}
+#footer {
+  background-color: maroon;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+.fa {
+  margin-right: 5px;
+}
+.showbtn,
+.hidebtn {
+  font-size: 30px;
+  color: white;
+  line-height: 70px;
+  float: right;
+  display: none;
+}
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -10;
+}
+@media (max-width: 800px) {
+  .showbtn,
+  .hidebtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 80px 0px;
+    transition: 0.7s;
+    line-height: normal;
+  }
+  #chk:checked ~ ul {
+    right: 0px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul li {
+    display: block;
+    margin-top: 25px;
+    padding: 20px 0;
+  }
+  ul li a {
+    display: block;
+  }
+  .hidebtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+@media (max-width: 625px) {
+  .showbtn,
+  .hidebtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    padding: 80px 0px;
+    transition: 0.7s;
+    line-height: normal;
+  }
+  #chk:checked ~ ul {
+    right: 0px;
+  }
+  ul li {
+    display: block;
+    padding: 20px opx;
+  }
+  ul li a {
+    display: block;
+  }
+  .hidebtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  #box5 {
+    width: 100%;
+  }
+  .box6 {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
